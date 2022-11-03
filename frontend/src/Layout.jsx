@@ -11,6 +11,7 @@ import RDNavLink from './utilities/RDNavLink';
 // import your route components too
 import App from './components/App';
 import Home from './components/Home';
+import ReduxSample from './components/ReduxSample';
 
 const TopNavbar = () => (<Navbar
     fluid={true}
@@ -35,7 +36,7 @@ const TopNavbar = () => (<Navbar
     <Navbar.Collapse>
         <RDNavLink to="/" text="Home" />
         <RDNavLink to="/app" text="App" />
-        <RDNavLink to="/services" text="Services" />
+        <RDNavLink to="/redux-sample" text="ReduxSample" />
         <RDNavLink to="/contact" text="Contact" />
     </Navbar.Collapse>
 </Navbar>);
@@ -48,6 +49,7 @@ export default function () {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/app" element={<App />} />
+                <Route path="/redux-sample" element={<ReduxSample />} />
             </Routes>
         </BrowserRouter>,
     </>);
