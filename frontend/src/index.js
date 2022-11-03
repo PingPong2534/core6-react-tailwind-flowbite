@@ -10,6 +10,9 @@ import Layout from './Layout';
 
 import reportWebVitals from './reportWebVitals';
 
+//Using Language
+import './localization/i18nextInit'
+
 // As of React 18
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

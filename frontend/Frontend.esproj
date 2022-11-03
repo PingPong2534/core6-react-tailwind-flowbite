@@ -8,7 +8,9 @@
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="src\assets\locales\" />
     <Folder Include="src\features\counter\" />
+    <Folder Include="src\localization\" />
     <Folder Include="src\stores\" />
     <Folder Include="src\utilities\" />
   </ItemGroup>
