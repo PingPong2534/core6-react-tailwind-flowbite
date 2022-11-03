@@ -12,6 +12,7 @@ import RDNavLink from './utilities/RDNavLink';
 import App from './components/App';
 import Home from './components/Home';
 import ReduxSample from './components/ReduxSample';
+import Error from './components/Error';
 
 // Language 
 import { useTranslation } from "react-i18next";
@@ -48,7 +49,6 @@ function SelectLangauge() {
 
 function TopNavbar() {
     const { t, i18n } = useTranslation("common");
-    console.log(t("home_nav_btn"));
     return (<Navbar
         fluid={true}
         rounded={true}
@@ -71,7 +71,7 @@ function TopNavbar() {
             <RDNavLink to="/" text={ t("home_nav_btn") } />
             <RDNavLink to="/app" text="App" />
             <RDNavLink to="/redux-sample" text="ReduxSample" />
-            <RDNavLink to="/contact" text="Contact" />
+            <RDNavLink to="/error" text="Error" />
         </Navbar.Collapse>
     </Navbar>);
 }
@@ -85,6 +85,7 @@ export default function () {
                 <Route path="/" element={<Home />} />
                 <Route path="/app" element={<App />} />
                 <Route path="/redux-sample" element={<ReduxSample />} />
+                <Route path="/error" element={<Error />} />
             </Routes>
         </BrowserRouter>,
     </>);
