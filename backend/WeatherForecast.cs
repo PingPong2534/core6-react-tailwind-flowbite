@@ -1,4 +1,4 @@
-namespace ReactSample
+namespace Backend
 {
     public class WeatherForecast
     {
